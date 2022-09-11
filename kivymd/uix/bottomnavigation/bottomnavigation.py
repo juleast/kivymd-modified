@@ -415,7 +415,8 @@ class MDBottomNavigationItem(MDTab):
 
     def on_tab_press(self, *args) -> None:
         """Called when clicking on a panel item."""
-
+        """The transition type of tabs in MDBottomNavigation has been changed to FadeTransition for a more natural feel. 
+        The solution is temporary and a more solid solution should be made."""
         bottom_navigation_object = self.parent_widget
         bottom_navigation_header_object = (
             bottom_navigation_object.previous_tab.header
